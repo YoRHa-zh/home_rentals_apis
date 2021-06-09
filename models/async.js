@@ -2,6 +2,7 @@ const sequelize = require('./db')
 require('./admin')
 require('./user')
 require('./rentalList')
+require('./message')
 sequelize.sync({
     alter: true
 }).then(() => {

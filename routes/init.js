@@ -47,6 +47,7 @@ app.use(express.json())
 app.use('/api/admin',require('./api/admin'));
 app.use('/api/user',require('./api/user'))
 app.use('/api/rental',require('./api/rental'))
+app.use('/api/message',require('./api/message'))
 
 //处理错误的中间件
 app.use(require('./errorMiddleware'))

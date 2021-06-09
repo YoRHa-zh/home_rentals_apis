@@ -34,7 +34,7 @@ router.post('/login', asyncHandler(async (req, res) => {
         res.cookie(`token`, value, {
             path: '/',
             domain: 'localhost',
-            maxAge: 3600 * 1000 //毫秒
+            maxAge: 3600 * 1000 * 24 * 7 //毫秒
         });
         const role = 'user';
         result.role = role;

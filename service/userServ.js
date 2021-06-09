@@ -25,7 +25,7 @@ exports.addUser = async function (userObj) {
             },
             type: 'string',
             length: {
-                is: 16
+                is: 18
             },
         },
         phone: {
