@@ -18,6 +18,6 @@ const User = sequelize.define('User', {
 }, {
     createdAt:false,
     updatedAt:false,
-    paranoid:true
+    // paranoid:true
 });
 module.exports = User

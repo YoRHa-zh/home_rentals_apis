@@ -19,6 +19,6 @@ const Message = sequelize.define('Message', {
 }, {
     createdAt:false,
     updatedAt:false,
-    paranoid:true
+    // paranoid:true
 });
 module.exports = Message

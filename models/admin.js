@@ -14,6 +14,6 @@ const Admin = sequelize.define('Admin', {
 }, {
     createdAt:false,
     updatedAt:false,
-    paranoid:true
+    // paranoid:true
 });
 module.exports = Admin

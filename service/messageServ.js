@@ -15,7 +15,7 @@ exports.deleteMess = async function (id) {
     })
     return ins;
 }
-exports.getAllMess = async function (page=1,limit=100){
+exports.getAllMess = async function (page=1,limit=10){
     const result = await Message.findAndCountAll({
         attributes: ["id", "time", "content"],
         include: [User],

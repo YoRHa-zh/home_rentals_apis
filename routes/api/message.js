@@ -8,7 +8,7 @@ const MessServ = require('../../service/messageServ')
 //获取所有留言信息
 router.get('/all', asyncHandler(async (req, res) => {
     const page = req.query.page || 1
-    const limit = req.query.limit || 100
+    const limit = req.query.limit || 10
     return await MessServ.getAllMess(page,limit);
 }))
 

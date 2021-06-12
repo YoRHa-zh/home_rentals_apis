@@ -42,6 +42,6 @@ const Rental = sequelize.define('Rental', {
 }, {
     createdAt: false,
     updatedAt: false,
-    paranoid: true
+    // paranoid: true
 });
 module.exports = Rental
